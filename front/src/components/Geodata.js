@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import France from '@socialgouv/react-departements';
-
+import France from "../departements/index";
 
 export default class Geodata extends Component {
 
@@ -9,7 +8,7 @@ export default class Geodata extends Component {
       <>
         <h1>Geodata</h1>
 
-        <France/>
+        <France departements={[92, 89, 21, 33, 47, 74, "2a", 976]} depOrange={[64, 75]}/>
       </>
     )
   }

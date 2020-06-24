@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Button } from 'react-bootstrap'
 import './App.css';
 import Geodata from './components/Geodata'
-import Chatbot from './components/Chatbot'
+import MLChatbot from './components/MLChatbot'
 
 
 export default class App extends Component {
@@ -19,7 +19,7 @@ export default class App extends Component {
       return <Geodata/>
     }
     else if(props.disp === 2){
-      return <Chatbot />
+      return <MLChatbot />
     }
     else{
       return <div></div>
